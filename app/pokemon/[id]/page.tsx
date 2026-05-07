@@ -16,11 +16,11 @@ export default async function PokemonPage({
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <header className="bg-red-600 shadow-md">
+      <header className="bg-blue-600 shadow-md">
         <div className="max-w-2xl mx-auto px-4 py-4 flex items-center gap-3">
           <Link
             href="/"
-            className="text-white hover:text-red-200 transition-colors text-sm font-medium flex items-center gap-1"
+            className="text-white hover:text-blue-200 transition-colors text-sm font-medium flex items-center gap-1"
           >
             ← Retour
           </Link>
@@ -93,7 +93,7 @@ export default async function PokemonPage({
           {pokemon.id > 1 && (
             <Link
               href={`/pokemon/${pokemon.id - 1}`}
-              className="text-sm text-gray-500 hover:text-red-600 transition-colors capitalize"
+              className="text-sm text-gray-500 hover:text-blue-600 transition-colors capitalize"
             >
               ← #{String(pokemon.id - 1).padStart(3, "0")}
             </Link>
@@ -101,7 +101,7 @@ export default async function PokemonPage({
           {pokemon.id < 151 && (
             <Link
               href={`/pokemon/${pokemon.id + 1}`}
-              className="text-sm text-gray-500 hover:text-red-600 transition-colors capitalize ml-auto"
+              className="text-sm text-gray-500 hover:text-blue-600 transition-colors capitalize ml-auto"
             >
               #{String(pokemon.id + 1).padStart(3, "0")} →
             </Link>
