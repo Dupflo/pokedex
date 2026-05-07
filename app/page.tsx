@@ -6,11 +6,11 @@ export default async function HomePage() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      <header className="bg-blue-600 shadow-md sticky top-0 z-10">
+      <header className="bg-green-600 shadow-md sticky top-0 z-10">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center gap-3">
           <div className="w-8 h-8 bg-white rounded-full border-4 border-gray-800 shadow-inner" />
           <h1 className="text-white text-2xl font-bold tracking-wide">Pokédex</h1>
-          <span className="text-blue-200 text-sm ml-auto">151 Pokémon</span>
+          <span className="text-green-200 text-sm ml-auto">151 Pokémon</span>
         </div>
       </header>
 
